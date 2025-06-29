@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      <span>{username}</span>
+      <span>{username ? username : "User"}</span>
       <Button onClick={onClose}>close</Button>
     </header>
   );
