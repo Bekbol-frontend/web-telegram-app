@@ -10,5 +10,6 @@ export const useTelegram = () => {
   return {
     onClose,
     username: tg.initDataUnsafe?.user?.username,
+    tg,
   };
 };
