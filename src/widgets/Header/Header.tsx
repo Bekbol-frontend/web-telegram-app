@@ -1,11 +1,14 @@
+import { useTelegram } from "../../shared/hooks/useTelegram";
 import Button from "../../shared/ui/Button/Button";
 import styles from "./Header.module.css";
 
 function Header() {
+  const { onClose, username } = useTelegram();
+
   return (
     <header className={styles.header}>
-      <span>user name</span>
-      <Button>close</Button>
+      <span>{username}</span>
+      <Button onClick={onClose}>close</Button>
     </header>
   );
 }
