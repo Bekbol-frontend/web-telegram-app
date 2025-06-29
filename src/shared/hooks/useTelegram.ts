@@ -7,8 +7,17 @@ export const useTelegram = () => {
     tg.close();
   }, []);
 
+  const onToggleButon = useCallback(() => {
+    if (tg.MainButton.isVisible) {
+      tg.MainButton.hide();
+    } else {
+      tg.MainButton.show();
+    }
+  }, []);
+
   return {
     onClose,
+    onToggleButon,
     username: tg.initDataUnsafe?.user?.username,
     tg,
   };
