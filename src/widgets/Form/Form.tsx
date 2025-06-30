@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from "react";
-import Button from "../../shared/ui/Button/Button";
 import styles from "./Form.module.css";
 import { useTelegram } from "../../shared/hooks/useTelegram";
 
@@ -67,7 +66,6 @@ function Form() {
           <option value="phesical">Физическое лицо</option>
           <option value="legal">Юридическое лицо</option>
         </select>
-        <Button type="submit">Submit</Button>
       </form>
     </div>
   );
