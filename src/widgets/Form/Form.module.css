@@ -1,0 +1,22 @@
+.block {
+  max-width: 1000px;
+  width: 100%;
+  padding: 30px;
+  margin: 30px auto;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input,
+.select {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
